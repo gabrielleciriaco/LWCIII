@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Formulário">
+        <div class="slds-box slds-theme_default">
+            <h1>Dados da Empresa</h1>
+
+            <lightning-input label="Primeiro Nome" type="text" value={primeiroNome} onchange={handleInputChange}></lightning-input>
+            
+            <lightning-input label="Sobrenome" type="text" value={sobrenome} onchange={handleInputChange}></lightning-input>
+            
+            <lightning-input label="Email" type="email" value={email} onchange={handleInputChange}></lightning-input>
+            
+            <lightning-input label="Website" type="url" value={website} onchange={handleInputChange}></lightning-input>
+            
+            <lightning-input label="Empresa" type="text" value={empresa} onchange={handleInputChange}></lightning-input>
+            
+            <lightning-input label="Receita Anual" type="number" value={receitaAnual} onchange={handleInputChange}></lightning-input>
+            
+            <lightning-button variant="brand" label="Salvar" onclick={handleSalvar}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
