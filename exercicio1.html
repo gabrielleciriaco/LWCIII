@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Formulário">
+        <div class="slds-box slds-theme_default">
+            <h1>Cálculo de IMC</h1>
+
+            <lightning-input label="Nome" type="text" value={nome} onchange={handleChangeNome}></lightning-input>
+            
+            <lightning-input label="Peso (kg)" type="number" value={peso} onchange={handleChangePeso}></lightning-input>
+            
+            <lightning-input label="Altura (cm):" type="number" value={altura} onchange={handleChangeAltura}></lightning-input>
+            
+            <lightning-button variant="brand" label="Calcular" onclick={handleClick}></lightning-button>
+            {imc}
+            
+        </div>
+    </lightning-card>
+</template>
